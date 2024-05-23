@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Moon Harvest Grociery</title>
+
+    <!--stylsheet-->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+    <!--Js-->
+    <script src="./script.js"></script>
+    
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="./images/icon.png">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/24035a8ce2.js" crossorigin="anonymous"></script>
+
+    <!--import fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    
+        <!--navigation-->
+        <nav class="navigation">
+
+            <!--logo-->
+            <a href="#" class="logo">
+                Moon Harvest Grocery
+            </a>
+
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./vegetable.html">Vegetables</a></li>
+                        <li><a href="./dairy.html">Dairy</a></li>
+                        <li><a href="./meat.html">Meat</a></li>
+                        <li><a href="./cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./loyalty.html">Loyalty register</a></li>
+            </ul>
+
+            <!--right-nav-->
+            <div class="right-nav">
+            
+                <!--register-->
+                <div class="icons">
+                    <a href="#" class="register">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+
+                <!--language-->
+                <div class="icons">
+                    <a href="#" class="language">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </a>
+                </div>
+
+                <!--cart-->
+                <div class="icons">
+                    <a href="#" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </nav>
+        <!--nav end--------------------------------------------------------------->
+    </header>
+
+
+
+    <main>
+
+        <!--About-banner=======================================-->
+        <section class="about-banner" id="about-banner">
+            <img src="./images/back9.jpg" class="about-banner-bg" alt="bg">
+            
+            <!--bannar-text-->
+            <div class="about-banner-text">
+                <h1>Get to know more about us!</h1>
+                <strong>#Moon Harvest Grocers</strong>
+            </div>
+        </section>
+
+        <!--Who are we-------------------------------->
+        <section  class="about2" id="about2">
+
+            <div class="row">
+                <div class="pic-container">
+                    <img src="./images/abtbg1.jpg" class="img1" alt="bg">
+                    <img src="./images/abtbg2.jpg" class="img2" alt="bg">
+                </div>
+
+                <div class="content">
+                    <h3>About our Products.</h3>
+                    <h1>We Provide Top Quality Grocery Products.</h1>
+                    <div class="para">
+                        <p>Welcome to Moon Harvest Grocery, your online haven for organic and top-quality products. With a dedication to organic sourcing, we offer goods free from harmful chemicals, promoting health and sustainability.</p>
+                        <p>At Moon Harvest, quality reigns supreme. We meticulously select only the finest products, ensuring satisfaction with every purchase.</p>
+                        <p>Join us in embracing a healthier, more sustainable lifestyle. With our commitment to organic integrity and unwavering dedication to quality, taste the goodness of nature in every bite.</p>
+                    </div>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Our Branches===========================================================-->
+
+        <section class="branches1">
+            <h1 class="heading">Our <span> Branches</span></h1>
+        </section>
+
+        <section class="branches">
+            <div class="about-container">
+                <div class="branches">
+                    <div class="branch" id="kandy">
+                        <h2>Kandy</h2>
+                        <p>Address: 123 Kandy Road, Kandy</p>
+                        <p>Contact: 081-1234567</p>
+                        <button onclick="showDetails('Kandy')">View Details</button>
+                    </div>
+                    <div class="branch-images" id="kandy-images">
+                        <img src="./images/br1.jpg" alt="Kandy Image 1">
+                        <img src="./images/br2.jpg" alt="Kandy Image 2">
+                        <img src="./images/br3.avif" alt="Kandy Image 3">
+                    </div>
+                    <div class="branch" id="colombo">
+                        <h2>Colombo</h2>
+                        <p>Address: 456 Colombo Street, Colombo</p>
+                        <p>Contact: 011-7654321</p>
+                        <button onclick="showDetails('Colombo')">View Details</button>
+                    </div>
+                    <div class="branch-images" id="colombo-images">
+                        <img src="./images/br4.jpg" alt="Colombo Image 1">
+                        <img src="./images/br5.jpg" alt="Colombo Image 2">
+                        <img src="./images/br6.jpg" alt="Colombo Image 3">
+                    </div>
+                    <div class="branch" id="galle">
+                        <h2>Galle</h2>
+                        <p>Address: 789 Galle Lane, Galle</p>
+                        <p>Contact: 091-9876543</p>
+                        <button onclick="showDetails('Galle')">View Details</button>
+                    </div>
+                    <div class="branch-images" id="galle-images">
+                        <img src="./images/br7.jpg" alt="Galle Image 1">
+                        <img src="./images/br8.jpg" alt="Galle Image 2">
+                        <img src="./images/br9.jpg" alt="Galle Image 3">
+                    </div>
+                </div>
+                <div id="details" class="details">
+                    <h2>Branch Details</h2>
+                    <div id="branch-info"></div>
+                    <div id="branch-images-display" class="branch-images-display"></div>
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--Our services-->
+        <section class="services-container"></section>
+            <h2 class="heading">Services <span>Offered</span> </h2>
+
+            <div class="table-container">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Home Delivery</td>
+                            <td>Get your groceries delivered to your doorstep</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Catering</td>
+                            <td>Food catering for events and parties</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Party Planning</td>
+                            <td>Assistance in planning and organizing parties</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Online Ordering</td>
+                            <td>Place orders for groceries online through the supermarket's website or mobile app</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Shopping Assistance</td>
+                            <td>Get personalized assistance from shopping assistants to help you find the right products and make informed decisions</td>
+                            <td>Available</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Contact us for more information</td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </section>
+        
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#">Moon Harvest Grocery</a>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">BestDeals</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">    
+                <strong>Category</strong>
+                <ul>
+                    <li><a href="#">Dairy</a></li>
+                    <li><a href="#">Vegitables & Fruits</a></li>
+                    <li><a href="#">Meat</a></li>
+                    <li><a href="#">Cosmetics & Skincare</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <strong>Contact Us</strong>
+                <ul>
+                    <li><a href="#">Phone: +94 76 237 4889</a></li>
+                    <li><a href="#">Email: moonharvest@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Moon Harvest Grociery</title>
+
+    <!--stylsheet-->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    
+    <!--Js-->
+    <script src="./script.js"></script>
+
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="./images/icon.png">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/24035a8ce2.js" crossorigin="anonymous"></script>
+
+    <!--import fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    
+        <!--navigation-->
+        <nav class="navigation">
+
+            <!--logo-->
+            <a href="#" class="logo">
+                Moon Harvest Grocery
+            </a>
+
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./vegetable.html">Vegetables</a></li>
+                        <li><a href="./dairy.html">Dairy</a></li>
+                        <li><a href="./meat.html">Meat</a></li>
+                        <li><a href="./cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./loyalty.html">Loyalty register</a></li>
+            </ul>
+
+            <!--right-nav-->
+            <div class="right-nav">
+            
+                <!--register-->
+                <div class="icons">
+                    <a href="#" class="register">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+
+                <!--language-->
+                <div class="icons">
+                    <a href="#" class="language">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </a>
+                </div>
+
+                <!--cart-->
+                <div class="icons">
+                    <a href="#" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </nav>
+        <!--nav end--------------------------------------------------------------->
+    </header>
+
+
+
+
+    <main>
+        <!--search bar=======================================-->
+        <section class="search-banner" id="search-banner">
+            <img src="./images/back9.jpg" class="search-banner-bg" alt="bg-1">
+            
+            <!--bannar-text-->
+            <div class="search-banner-text">
+                <h1>Get Your Daily Grocery with just a Click.</h1>
+                <strong>#Countrywide Delivery</strong>
+    
+                <!--search-box----------------------->
+                <form action="" class="search-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!--input-->
+                    <input type="text" class="search-input" placeholder="Search here..." name="search" required>
+                    <!--btn-->
+                    <input type="submit" class="search-btn" value="Search">
+                </form>
+            </div>
+        </section>
+
+        <!--Who are we-------------------------------->
+        <section  class="about" id="about">
+
+            <h1 class="heading"><span>Who </span> are <span>We</span></h1>
+
+            <div class="row">
+                <div class="video-container">
+                    <video src="./images/abt.mp4" loop autoplay muted></video>
+                    <h3>Best shopping experience</h3>
+                </div>
+
+                <div class="content">
+                    <h3>Why Choose us</h3>
+                    <p>At Moon Harvest Grocery, enjoy the convenience of shopping from home with our user-friendly online platform. Browse our curated selection of locally sourced produce, artisanal goods, and quality ingredients. Our friendly staff provide personalized assistance, ensuring a seamless and enjoyable shopping experience.</p>
+                    <!--bullet list-------------------------->
+                    <div class="list">
+                        <ul>
+                            <li>Online convenience: Easy browsing</li>
+                            <li>Curated selection: Local produce, artisanal goods</li>
+                            <li>Personalized service: Friendly staff</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Features section----------------------------------------------->
+
+        <section class="features-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="features">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <ol>
+                        <li>Get your groceries swiftly with our fast delivery service.</li>
+                        <li>Ensure you receive your essentials right at your doorstep.</li>
+                    </ol>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="features">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Farm Fresh Items</h3>
+                    <ol>
+                        <li>Indulge in the goodness of farm-fresh items.</li>
+                        <li>Handpicked just for you to savor the authentic flavors of nature's bounty.</li>
+                    </ol>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="features">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3>Easy Ordering & Payment</h3>
+                    <ol>
+                        <li>Ordering your groceries is a breeze with simple steps.</li>
+                        <li>Convenient payment options make your shopping experience hassle-free.</li>
+                    </ol>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!--features section end------------------------------------------------->
+
+
+        <!--special-offers------------------------------------------------->
+        
+        <div class="flex-container">
+            <div class="image">
+                <img src="./images/offer1.jpg" alt="Image 1">
+                <div class="overlay">
+                    <p>Dairy Products</p>
+                    <h2>Upto 50% off</h2>
+                    <button>Check Out <span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./images/offer2.jpg" alt="Image 2">
+                <div class="overlay">
+                    <p>Vegitables & Fruits</p>
+                    <h2>Upto 45% off</h2>
+                    <button>Check Out <span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./images/offer3.jpg" alt="Image 3">
+                <div class="overlay">
+                    <p>Meat & Seafood</p>
+                    <h2>Upto 40% off</h2>
+                    <button>Check Out <span><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                </div>
+            </div>
+        </div>
+            
+           
+        
+        
+
+
+
+        <!--Our app section starts-------------------------------------------------->
+        <section id="download-app">
+
+            <!--img---------------------------->
+            <div class="app-img">
+                <img src="" alt="app">
+            </div>
+
+            <!--text-------------------------------->
+            <div class="download-app-text">
+                <strong>Download App</strong>
+                <p>Moon Harvest Grocery's mobile app offers seamless grocery shopping with a user-friendly interface. Browse, select, and download your groceries hassle-free, ensuring a convenient and efficient shopping experience on-the-go.</p>
+                
+                <!--btns------------------------------>
+                <div class="download-btns">
+                    <a href="#"><img src="./images/app.png" alt="appstore"></a>
+                    <a href="#"><img src="./images/google.webp" alt="playstore"></a>
+                </div>    
+            </div> 
+        </section>
+    </main>
+
+    <!--Footer---------------------------------------->
+    <footer>
+        <div class="footer-container">
+
+            <!--logo-container---------------->
+
+            <div class="footer-logo">
+                <a href="#">Moon Harvest Grocery</a>
+                
+
+                <!--Social--------------->
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!--links------------------------------------>
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">BestDeals</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">    
+                <strong>Category</strong>
+                <ul>
+                    <li><a href="#">Dairy</a></li>
+                    <li><a href="#">Vegitables & Fruits</a></li>
+                    <li><a href="#">Meat</a></li>
+                    <li><a href="#">Cosmetics & Skincare</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <strong>Contact Us</strong>
+                <ul>
+                    <li><a href="#">Phone: +94 76 237 4889</a></li>
+                    <li><a href="#">Email: moonharvest@gmail.com</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </footer>
+
+
+    
+    
+</body>
+</html>

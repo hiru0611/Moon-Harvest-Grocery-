@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Harvest Grocery</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="shortcut icon" href="./icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/24035a8ce2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <a href="#" class="logo">Moon Harvest Grocery</a>
+            <ul class="menu">
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products <i class="fas fa-chevron-down" aria-label="Products dropdown"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./vegetable.html">Vegetables</a></li>
+                        <li><a href="./dairy.html">Dairy</a></li>
+                        <li><a href="./meat.html">Meat</a></li>
+                        <li><a href="./cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./order.html">Order</a></li>
+                <li><a href="./loyalty.html">Loyalty register</a></li>
+            </ul>
+            <div class="right-nav">
+                <div class="icons">
+                    <a href="#" class="register" aria-label="Register"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="#" class="language" aria-label="Language"><i class="fa-solid fa-earth-americas"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="#" class="cart" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="container" id="container">
+            <div class="form-section">
+                <form class="item-form">
+                    <h2>Billing details</h2>
+                    <label for="Category">Category</label>
+                    <select name="Category" required>
+                        <option value="">Select a Category</option>
+                        <option value="vegetable">Vegitables</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="meat">Meat</option>
+                        <option value="cosmetics">Cosmetics</option>
+                    </select>
+
+                    <label for="item-name">Item name</label>
+                    <input type="text" id="item-name" name="item-name" placeholder="Item name" required>
+
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity" placeholder="Quantity" required>
+
+                </form>
+
+                <form class="billing-form">
+                    <h2>Billing details</h2>
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                    
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                    
+                    <label for="company-name">Company name (Optional)</label>
+                    <input type="text" id="company-name" name="company-name" placeholder="Company name">
+                    
+                    <label for="province">Province</label>
+                    <select name="province" required>
+                        <option value="">Select a province</option>
+                        <option value="central">Central</option>
+                        <option value="eastern">Eastern</option>
+                        <option value="north-central">North Central</option>
+                        <option value="northern">Northern</option>
+                        <option value="north-western">North Western</option>
+                        <option value="sabaragamuwa">Sabaragamuwa</option>
+                        <option value="southern">Southern</option>
+                        <option value="uva">Uva</option>
+                        <option value="western">Western</option>
+                    </select>
+                    
+                    <label for="city">Town / City</label>
+                    <input type="text" id="city" name="city" placeholder="Town / City" required>
+                    
+                    <label for="postcode">Postcode / ZIP</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="Postcode / ZIP" required>
+
+                    <label for="street-address">Street address</label>
+                    <input type="text" id="street-address" name="street-address" placeholder="Street address" required>
+                    
+                    <label for="apartment">Apartment, suite, unit etc. (Optional)</label>
+                    <input type="text" id="apartment" name="apartment" placeholder="Apartment, suite, unit etc.">
+                    
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                    
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                    
+                    <h2>Shipping details</h2>
+                    <label><input type="checkbox" name="subscribe"> I Ensure the above are True.</label>
+                    
+                    <label for="order-notes">Order notes (Optional)</label>
+                    <textarea id="order-notes" name="order-notes" placeholder="Order notes"></textarea>
+                </form>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Your products (4)</h2>
+                <div class="cart-item">
+                    <img src="./apple.png" alt="Organic Apples">
+                    <div class="content">
+                        <p>Organic Apples</p>
+                        <strong>Product code: FRU70051541A</strong>
+                        <br>
+                        <span>4 x $12.00</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-item">
+                    <img src="./carrot.png" alt="Fresh Carrots">
+                    <div class="content">
+                        <p>Fresh Carrots</p>
+                        <strong>Product code: VEG70051541B</strong>
+                        <br>
+                        <span>3 x $8.00</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-item">
+                    <img src="./Banana.png" alt="Organic Bananas">
+                    <div class="content">
+                        <p>Organic Bananas</p>
+                        <strong>Product code: FRU70051541C</strong>
+                        <br>
+                        <span>5 x $10.00</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-item">
+                    <img src="./broccoli.png" alt="Fresh Broccoli">
+                    <div class="content">
+                        <p>Fresh Broccoli</p>
+                        <strong>Product code: VEG70051541D</strong>
+                        <br>
+                        <span>2 x $6.00</span>
+                    </div>
+                </div>    
+                <hr>
+                <h2>Your order</h2>
+                <div class="order-summary">
+                    <div class="order-item">
+                        <p>Organic Apples:</p>
+                        <span>$48.00</span> <!-- 4 x $12.00 -->
+                    </div>
+                    <hr>
+                    <div class="order-item">
+                        <p>Fresh Carrots:</p>
+                        <span>$24.00</span> <!-- 3 x $8.00 -->
+                    </div>
+                    <hr>
+                    <div class="order-item">
+                        <p>Organic Bananas:</p>
+                        <span>$50.00</span> <!-- 5 x $10.00 -->
+                    </div>
+                    <hr>
+                    <div class="order-item">
+                        <p>Fresh Spinach:</p>
+                        <span>$12.00</span> <!-- 2 x $6.00 -->
+                    </div>
+                    <hr>
+                    <div class="order-item">
+                        <p>Subtotal:</p>
+                        <span>$179.00</span> <!-- Sum of all item prices -->
+                    </div>
+                    <hr>
+                    <div class="order-item">
+                        <p>Shipping Charge:</p>
+                        <span>Free shipping</span>
+                    </div>
+                    <hr>
+                    <div class="order-total">
+                        <p>Total:</p>
+                        <span>$179.00</span> <!-- Subtotal + Shipping Charge -->
+                    </div>
+                </div>
+                
+                <hr>
+                <h2>Payment method</h2>
+                <label><input type="radio" name="payment-method" value="bank"> Direct bank transfer</label>
+                <label><input type="radio" name="payment-method" value="paypal"> Paypal</label>
+                <label><input type="radio" name="payment-method" value="cash"> Cash on delivery</label>
+                <div class="card-icons">
+                    <i class="fa-brands fa-cc-visa fa-xl"></i>
+                    <i class="fa-brands fa-cc-paypal fa-xl"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-xl"></i>                </div>
+                <button type="submit">Add To Cart</button>
+            </div>
+        </section>
+    </main>
+
+         <!--Footer---------------------------------------->
+         <footer>
+            <div class="footer-container">
+    
+                <!--logo-container---------------->
+    
+                <div class="footer-logo">
+                    <a href="#">Moon Harvest Grocery</a>
+                    
+    
+                    <!--Social--------------->
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+    
+                <!--links------------------------------------>
+                <div class="footer-links">
+                    <strong>Product</strong>
+                    <ul>
+                        <li><a href="#">BestDeals</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">New</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-links">    
+                    <strong>Category</strong>
+                    <ul>
+                        <li><a href="#">Dairy</a></li>
+                        <li><a href="#">Vegitables & Fruits</a></li>
+                        <li><a href="#">Meat</a></li>
+                        <li><a href="#">Cosmetics & Skincare</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-links">
+                    <strong>Contact Us</strong>
+                    <ul>
+                        <li><a href="#">Phone: +94 76 237 4889</a></li>
+                        <li><a href="#">Email: moonharvest@gmail.com</a></li>
+                    </ul>
+                </div>
+    
+                
+            </div>
+        </footer>
+
+        
+
+        
+</body>
+</html>
