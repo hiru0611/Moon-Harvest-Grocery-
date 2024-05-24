@@ -235,17 +235,23 @@ a {
     margin-top: 10px;
 }
 
-.about .heading {
+.heading {
     text-align: center;
     font-size: 2.5rem;
-    color: #bcffcc;
+    color: #ffffff;
     padding: 2rem;
     margin: 2rem 90px;
+    margin-bottom: 5%;
     background: #001e00;
+    border-radius: 30px;
 }
 
-.about .heading span {
-    color: #fff;
+.heading span {
+    color: #b49552;
+}
+
+.vegetables-container1 .heading{
+    margin-top: 5%;
 }
 
 .about .row {
