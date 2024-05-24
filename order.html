@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body class="order">
-    <!-- Header Section -->
     <header class="header">
         <nav class="navigation">
             <a href="#" class="logo">Moon Harvest Grocery</a>
@@ -47,17 +46,16 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
     <main>
+        
         <section class="container" id="container">
             <div class="form-section">
-                <!-- Item Form -->
                 <form class="item-form">
                     <h2>Billing details</h2>
                     <label for="Category">Category</label>
                     <select name="Category" required>
                         <option value="">Select a Category</option>
-                        <option value="vegetable">Vegetables</option>
+                        <option value="vegetable">Vegitables</option>
                         <option value="fruits">Fruits</option>
                         <option value="dairy">Dairy</option>
                         <option value="meat">Meat</option>
@@ -69,9 +67,9 @@
 
                     <label for="quantity">Quantity</label>
                     <input type="text" id="quantity" name="quantity" placeholder="Quantity" required>
+
                 </form>
 
-                <!-- Billing Form -->
                 <form class="billing-form">
                     <h2>Billing details</h2>
                     <label for="first-name">First name</label>
@@ -123,7 +121,6 @@
                 </form>
             </div>
 
-            <!-- Cart Summary Section -->
             <div class="cart-summary">
                 <h2>Your products (4)</h2>
                 <div class="cart-item">
@@ -188,18 +185,37 @@
                         <span>$12.00</span> <!-- 2 x $6.00 -->
                     </div>
                     <hr>
-                    <div class="order-item total">
-                        <strong>Total:</strong>
-                        <strong>$134.00</strong>
+                    <div class="order-item">
+                        <p>Subtotal:</p>
+                        <span>$179.00</span> <!-- Sum of all item prices -->
                     </div>
                     <hr>
-                    <button type="button" class="place-order">Place Order</button>
+                    <div class="order-item">
+                        <p>Shipping Charge:</p>
+                        <span>Free shipping</span>
+                    </div>
+                    <hr>
+                    <div class="order-total">
+                        <p>Total:</p>
+                        <span>$179.00</span> <!-- Subtotal + Shipping Charge -->
+                    </div>
                 </div>
+                
+                <hr>
+                <h2>Payment method</h2>
+                <label><input type="radio" name="payment-method" value="bank"> Direct bank transfer</label>
+                <label><input type="radio" name="payment-method" value="paypal"> Paypal</label>
+                <label><input type="radio" name="payment-method" value="cash"> Cash on delivery</label>
+                <div class="card-icons">
+                    <i class="fa-brands fa-cc-visa fa-xl"></i>
+                    <i class="fa-brands fa-cc-paypal fa-xl"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-xl"></i>                
+                <button type="submit">Add To Cart</button>
             </div>
         </section>
     </main>
 
-        <!--Footer---------------------------------------->
+    <!--Footer---------------------------------------->
     <footer>
         <div class="footer-container">
 
@@ -250,5 +266,9 @@
             
         </div>
     </footer>
+
+        
+
+        
 </body>
 </html>
