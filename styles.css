@@ -1148,13 +1148,14 @@ tfoot td {
     margin-top: 10px;
 }
 
-.vegetables-heading {
+.heading {
     text-align: center;
     font-size: 2.5rem;
     color: #ffffff;
     padding: 2rem;
     margin: 2rem 90px;
     background: #001e00;
+    border-radius: 20px;
 }
 
 .heading span {
@@ -1164,7 +1165,7 @@ tfoot td {
 .venues-container .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
 
@@ -1187,7 +1188,7 @@ tfoot td {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 90%;
+    height: 94%;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 20px;
@@ -1208,23 +1209,24 @@ tfoot td {
 /* Adjust the grid item positioning */
 .venues-container .grid-container .grid-item.tall:nth-child(1) {
     grid-column: 1 / 2;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
 .venues-container .grid-container .grid-item.short:nth-child(2) {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / 3;
 }
 
 .venues-container .grid-container .grid-item.short:nth-child(3) {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3 / 4;
 }
 
 .venues-container .grid-container .grid-item.tall:nth-child(4) {
     grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 3;
 }
+
 
 
 
