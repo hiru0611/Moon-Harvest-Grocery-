@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./styles.css">
     
     <!--fav-icon-->
-    <link rel="shortcut icon" href="./icon.png">
+    <link rel="shortcut icon" href="./images/icon.png">
 
     <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
@@ -21,18 +21,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="contact">
     <header class="header">
-    
-        <!--navigation-->
+        <!-- Navigation -->
         <nav class="navigation">
-
-            <!--logo-->
-            <a href="#" class="logo">
-                Moon Harvest Grocery
-            </a>
-
-            <!--menu-->
+            <!-- Logo -->
+            <a href="#" class="logo">Moon Harvest Grocery</a>
+            <!-- Menu -->
             <ul class="menu">
                 <li><a href="./index.html" class="active">Home</a></li>
                 <li><a href="./about.html">About us</a></li>
@@ -49,56 +44,42 @@
                 <li><a href="./order.html">Order</a></li>
                 <li><a href="./loyalty.html">Loyalty register</a></li>
             </ul>
-
-            <!--right-nav-->
+            <!-- Right Nav -->
             <div class="right-nav">
-            
-                <!--register-->
+                <!-- Register -->
                 <div class="icons">
-                    <a href="#" class="register">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
+                    <a href="#" class="register"><i class="fa-solid fa-user"></i></a>
                 </div>
-
-                <!--language-->
+                <!-- Language -->
                 <div class="icons">
-                    <a href="#" class="language">
-                        <i class="fa-solid fa-earth-americas"></i>
-                    </a>
+                    <a href="#" class="language"><i class="fa-solid fa-earth-americas"></i></a>
                 </div>
-
-                <!--cart-->
+                <!-- Cart -->
                 <div class="icons">
-                    <a href="#" class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
+                    <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
-
             </div>
-
         </nav>
-        <!--nav end--------------------------------------------------------------->
+        <!-- Nav End -->
     </header>
 
     <main>
         <div class="contact-container">
             <div class="contact-info">
                 <h2>Get in touch</h2>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                <p><a href="">moonharvesgrovery@example.com</a></p>
                 <div class="divider"></div>
                 <address>
                     <p>12 NW 19th Place</p>
                     <p>Pompano Beach, FL, 33063</p>
-                    <p>United States</p>
+                    <p>Colomco</p>
                 </address>
                 <div class="divider"></div>
                 <p>Phone: +1 234 567 8900</p>
                 <div class="map-container">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12087.321410907392!2d-80.1347663!3d26.2427501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9026b4e4bbd1b%3A0x2196e5e6f5f9c4ed!2sPompano%20Beach%2C%20FL%2033063%2C%20USA!5e0!3m2!1sen!2sin!4v1628763525172!5m2!1sen!2sin" 
-                        width="300" 
-                        height="200" 
-                        style="border:0;" 
+                        class="map-iframe"
                         allowfullscreen="" 
                         loading="lazy">
                     </iframe>
@@ -106,7 +87,7 @@
             </div>
             <div class="contact-form">
                 <h2>Leave Us A Message</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Let us know how to improve.Your attention is very valuable</p>
                 <form action="#" method="post">
                     <div class="form-row">
                         <div class="form-group">
@@ -122,7 +103,9 @@
                     <div class="form-group">
                         <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <div class="btn">
+                        <button type="submit">Send Message</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -179,10 +162,6 @@
         </div>
     </footer>
 
-
-    
-    
 </body>
 </html>
-</body>
 
