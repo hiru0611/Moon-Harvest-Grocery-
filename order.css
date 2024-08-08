@@ -1,0 +1,164 @@
+/*------------------------------------------Order 1-------------------------------------------------------*/
+
+/* Billing and Cart container */
+body.order1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body.order1::before {
+  content: "";
+  position: fixed; /* Use fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/back9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+body.order1::after {
+  content: "";
+  position: fixed; /* Use fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+.container1 {
+  width: 80%;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order {
+  text-align: center;
+  background-color: rgba(0, 36, 0, 0.8); /* Dark green with transparency */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-size: 24px;
+  text-transform: uppercase; /* Makes the text uppercase */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds some shadow for depth */
+  font-family: 'Poppins', sans-serif; /* Assuming the same font used elsewhere */
+}
+
+
+.product-card {
+  display: inline-block;
+  width: 23%;
+  margin: 2% 4%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.product-card p {
+  margin: 10px 0;
+}
+
+.product-card input {
+  width: 25%;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+
+#cartContainer {
+  width: 100%;
+}
+
+#cartTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-header, .cart-data {
+  padding: 15px;
+  text-align: left;
+  font-size: 13px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.cart-header:last-child, .cart-data:last-child {
+  border-right: none;
+}
+
+.cart-header {
+  background-color: #999;
+  color: #fff;
+  border-right: 1px solid #fff;
+}
+
+.cart-row {
+  background-color: rgb(255, 255, 255); /* Semi-transparent white */
+  color: #fff; /* Dark text for contrast */
+}
+
+.cart-row:nth-child(even) {
+  background-color: rgba(240, 240, 240, 0.8); /* Alternate row color */
+}
+
+.cart-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: right;
+  padding: 15px;
+  font-size: 13px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.cart-image {
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color:rgba(10, 98, 10, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: #001e00;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

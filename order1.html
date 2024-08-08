@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Harvest Grocery</title>
+    <link rel="stylesheet" type="text/css" href="./order.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/24035a8ce2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="order1">
+    <header class="header">
+        <nav class="navigation">
+            <a href="#" class="logo">Moon Harvest Grocery</a>
+            <ul class="menu">
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li class="dropdown">
+                    <a href="#">Products <i class="fas fa-chevron-down" aria-label="Products dropdown"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./vegetable.html">Vegetables</a></li>
+                        <li><a href="./fruits.html">Fruits</a></li>
+                        <li><a href="./dairy.html">Dairy</a></li>
+                        <li><a href="./meat.html">Meat</a></li>
+                        <li><a href="./cosmetics.html">Cosmetics</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./order1.html" class="active">Order</a></li>
+                <li><a href="./loyalty.html">Loyalty register</a></li>
+            </ul>
+            <div class="right-nav">
+                <div class="icons">
+                    <a href="#" class="register" aria-label="Register"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="#" class="language" aria-label="Language"><i class="fa-solid fa-earth-americas"></i></a>
+                </div>
+                <div class="icons">
+                    <a href="#" class="cart" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container1">
+            <h1>Order Groceries</h1>
+
+            <div id="products">
+                <h2 class="order">Fruits</h2>
+                <div class="product-card">
+                    <img src="./images/apple.png" alt="Apple">
+                    <p>Apple</p>
+                    <p>$3 per kg</p>
+                    <input type="number" id="apple" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/Banana.png" alt="Banana">
+                    <p>Banana</p>
+                    <p>$1.5 per kg</p>
+                    <input type="number" id="banana" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/orange.webp" alt="Orange">
+                    <p>Orange</p>
+                    <p>$2 per kg</p>
+                    <input type="number" id="orange" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/strawberry.png" alt="Strawberry">
+                    <p>Strawberry</p>
+                    <p>$3.5 per kg</p>
+                    <input type="number" id="strawberry" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/grape.webp" alt="Grapes">
+                    <p>Grapes</p>
+                    <p>$2.5 per kg</p>
+                    <input type="number" id="grapes" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/pineapple.png" alt="Pineapple">
+                    <p>Pineapple</p>
+                    <p>$4 per kg</p>
+                    <input type="number" id="pineapple" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/watermelon.png" alt="Watermelon">
+                    <p>Watermelon</p>
+                    <p>$3 per kg</p>
+                    <input type="number" id="watermelon" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/Kiwi.png" alt="Kiwi">
+                    <p>Kiwi</p>
+                    <p>$5 per kg</p>
+                    <input type="number" id="kiwi" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/mango.png" alt="Mango">
+                    <p>Mango</p>
+                    <p>$6 per kg</p>
+                    <input type="number" id="mango" placeholder="kg">
+                </div>
+
+                <h2 class="order">Vegetables</h2>
+                <div class="product-card">
+                    <img src="./images/onion.png" alt="Onion">
+                    <p>Onion</p>
+                    <p>$1 per kg</p>
+                    <input type="number" id="onion" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/broccoli.png" alt="Brocolli">
+                    <p>Brocolli</p>
+                    <p>$3.5 per kg</p>
+                    <input type="number" id="brocolli" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/tomato.png" alt="Tomato">
+                    <p>Tomato</p>
+                    <p>$2.5 per kg</p>
+                    <input type="number" id="tomato" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/carrot.png" alt="Carrot">
+                    <p>Carrot</p>
+                    <p>$2 per kg</p>
+                    <input type="number" id="carrot" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/cucumber.png" alt="Cucumber">
+                    <p>Cucumber</p>
+                    <p>$1.8 per kg</p>
+                    <input type="number" id="cucumber" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/cauliflower.webp" alt="Cauliflower">
+                    <p>Cauliflower</p>
+                    <p>$2.2 per kg</p>
+                    <input type="number" id="cauliflower" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/potato.png" alt="Potato">
+                    <p>Potato</p>
+                    <p>$1.5 per kg</p>
+                    <input type="number" id="potato" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/beet.png" alt="Beet">
+                    <p>Beet</p>
+                    <p>$2.8 per kg</p>
+                    <input type="number" id="beet" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/cabbage.png" alt="Cabbage">
+                    <p>Cabbage</p>
+                    <p>$1.6 per kg</p>
+                    <input type="number" id="cabbage" placeholder="kg">
+                </div>
+
+                <h2 class="order">Dairy Produce</h2>
+                <div class="product-card">
+                    <img src="./images/milk.webp" alt="Milk">
+                    <p>Milk</p>
+                    <p>$1.2 each</p>
+                    <input type="number" id="milk" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/yoghurt.png" alt="Yoghurt">
+                    <p>Yoghurt</p>
+                    <p>$1.5 each</p>
+                    <input type="number" id="yoghurt" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/cheese.png" alt="Cheese">
+                    <p>Cheese</p>
+                    <p>$5 each</p>
+                    <input type="number" id="cheese" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/butter.png" alt="Butter">
+                    <p>Butter</p>
+                    <p>$2.5 each</p>
+                    <input type="number" id="butter" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/sourcream.png" alt="Sour Cream">
+                    <p>Sour Cream</p>
+                    <p>$1.8 each</p>
+                    <input type="number" id="sourcream" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/egg.png" alt="Egg">
+                    <p>Egg</p>
+                    <p>$0.5 each</p>
+                    <input type="number" id="egg" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/curd.avif" alt="Curd">
+                    <p>Curd</p>
+                    <p>$1.2 each</p>
+                    <input type="number" id="curd" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/ice cream.avif" alt="Ice Cream">
+                    <p>Ice Cream</p>
+                    <p>$3 each</p>
+                    <input type="number" id="icecream" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/cottagecheese.webp" alt="Cottage Cheese">
+                    <p>Cottage Cheese</p>
+                    <p>$4 each</p>
+                    <input type="number" id="cottagecheese" placeholder="quantity">
+                </div>
+
+                <h2 class="order">Meat and Seafood</h2>
+                <div class="product-card">
+                    <img src="./images/beef.png" alt="Beef">
+                    <p>Beef</p>
+                    <p>$8 per kg</p>
+                    <input type="number" id="beef" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/chicken.png" alt="Chicken">
+                    <p>Chicken</p>
+                    <p>$6 per kg</p>
+                    <input type="number" id="chicken" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/pork.jpg" alt="Pork">
+                    <p>Pork</p>
+                    <p>$7 per kg</p>
+                    <input type="number" id="pork" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/lamb.jpg" alt="Lamb">
+                    <p>Lamb</p>
+                    <p>$9 per kg</p>
+                    <input type="number" id="lamb" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/salmon.png" alt="Salmon">
+                    <p>Salmon</p>
+                    <p>$10 per kg</p>
+                    <input type="number" id="salmon" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/tuna.png" alt="Tuna">
+                    <p>Tuna</p>
+                    <p>$8 per kg</p>
+                    <input type="number" id="tuna" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/shrimp.png" alt="Shrimp">
+                    <p>Shrimp</p>
+                    <p>$12 per kg</p>
+                    <input type="number" id="shrimp" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/lobster.png" alt="Lobster">
+                    <p>Lobster</p>
+                    <p>$15 per kg</p>
+                    <input type="number" id="lobster" placeholder="kg">
+                </div>
+                <div class="product-card">
+                    <img src="./images/crab.png" alt="Crab">
+                    <p>Crab</p>
+                    <p>$14 per kg</p>
+                    <input type="number" id="crab" placeholder="kg">
+                </div>
+
+                <h2 class="order">Baking and Cooking Ingredients</h2>
+                <div class="product-card">
+                    <img src="./images/flour.png" alt="Flour">
+                    <p>Flour</p>
+                    <p>$0.5 each</p>
+                    <input type="number" id="flour" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/sugar.png" alt="Sugar">
+                    <p>Sugar</p>
+                    <p>$0.7 each</p>
+                    <input type="number" id="sugar" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/butter.png" alt="Butter">
+                    <p>Butter</p>
+                    <p>$1.2 each</p>
+                    <input type="number" id="butter" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/egg.png" alt="Eggs">
+                    <p>Eggs</p>
+                    <p>$2.0 dozen</p>
+                    <input type="number" id="eggs" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/baking_powder.png" alt="Baking Powder">
+                    <p>Baking Powder</p>
+                    <p>$1.0 each</p>
+                    <input type="number" id="baking_powder" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/vanilla_extract.png" alt="Vanilla Extract">
+                    <p>Vanilla Extract</p>
+                    <p>$3.0 each</p>
+                    <input type="number" id="vanilla_extract" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/salt.png" alt="Salt">
+                    <p>Salt</p>
+                    <p>$0.3 each</p>
+                    <input type="number" id="salt" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/milk.webp" alt="Milk">
+                    <p>Milk</p>
+                    <p>$1.5 each</p>
+                    <input type="number" id="milk" placeholder="quantity">
+                </div>
+                <div class="product-card">
+                    <img src="./images/baking_soda.png" alt="Baking Soda">
+                    <p>Baking Soda</p>
+                    <p>$0.8 each</p>
+                    <input type="number" id="baking_soda" placeholder="quantity">
+                </div>
+                
+            </div>
+
+            <button id="addToCart">Add to Cart</button>
+            <button id="addToFavourites">Add to Favourites</button>
+            <button id="applyFavourites">Apply Favourites</button>
+
+            <div id="cartContainer">
+                <h2 class="order">Cart</h2>
+                <table id="cartTable">
+                    <thead id="cartThead">
+                        <tr>
+                            <th class="cart-header">Image</th>
+                            <th class="cart-header">Item</th>
+                            <th class="cart-header">Amount</th>
+                            <th class="cart-header">Price</th>
+                            <th class="cart-header">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartTbody">
+                        
+                    </tbody>
+                    <tfoot id="cartTfoot">
+                        <tr>
+                            <td class="cart-footer" colspan="4">Total:</td>
+                            <td class="cart-footer" id="totalPrice">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button id="buynow-button">Buy Now</button>
+            </div>
+            
+    </main>
+
+    <!--Footer---------------------------------------->
+    <footer>
+        <div class="footer-container">
+
+            <!--logo-container---------------->
+
+            <div class="footer-logo">
+                <a href="#">Moon Harvest Grocery</a>
+                
+
+                <!--Social--------------->
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!--links------------------------------------>
+            <div class="footer-links">
+                <strong>Product</strong>
+                <ul>
+                    <li><a href="#">BestDeals</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">    
+                <strong>Category</strong>
+                <ul>
+                    <li><a href="#">Dairy</a></li>
+                    <li><a href="#">Vegitables & Fruits</a></li>
+                    <li><a href="#">Meat</a></li>
+                    <li><a href="#">Cosmetics & Skincare</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <strong>Contact Us</strong>
+                <ul>
+                    <li><a href="#">Phone: +94 76 237 4889</a></li>
+                    <li><a href="#">Email: moonharvest@gmail.com</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
