@@ -691,8 +691,6 @@ footer{
     transition: all ease 0.3s;
 }
 
-
-
 /*---------------------------ABOUT-US-PAGE------------------------------------*/
 
 @keyframes fadeUp {
@@ -979,19 +977,6 @@ footer{
 
 /*---------------------------------Services----------------------------------------------------*/
 
-#services-container .table-heading{
-    text-align: center;
-    font-size: 2.5rem;
-    color: #333;
-    padding: 2rem;
-    margin: 2rem 90px;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.serices-container .table-heading{
-    color: #b49552;
-}
-
 
 .table-container {
     border: 1px solid #ccc;
@@ -1003,12 +988,12 @@ footer{
     margin-bottom: 50px;
 }
 
-table {
+#services {
     width: 100%; /* Occupy full width of the container */
     border-collapse: collapse;
 }
 
-th, td {
+#services th, td {
     padding: 15px;
     text-align: left;
     font-size: 13px;
@@ -1016,29 +1001,27 @@ th, td {
     border-right: 1px solid #ccc;
 }
 
-th:last-child, td:last-child {
+#services th:last-child, td:last-child {
     border-right: none;
 }
 
-thead th {
+#services thead th {
     background-color: #999;
     color: #fff;
     border-right: 1px solid #fff;
 }
 
-tbody tr:nth-child(even) {
+#services tbody tr:nth-child(even) {
     background-color: #f4f4f4;
 }
 
-tfoot td {
+#services tfoot td {
     background-color: #999;
     color: #fff;
     text-align: center;
     font-style: italic;
     border-right: 1px solid #fff;
 }
-
-
 
 
 /*---------------Banner-container-----------------*/
@@ -1993,192 +1976,6 @@ body.contact::after {
 }
 
 
-
-/*-------------------order-page---------------------------------------------------------------------------------------------------------------*/
-
-/* Billing and Cart container */
-body.order {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-body.order::before {
-    content: "";
-    position: fixed; /* Use fixed to cover the entire viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/back9.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -2;
-}
-
-body.order::after {
-    content: "";
-    position: fixed; /* Use fixed to cover the entire viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: -1;
-}
-
-/* Container */
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 100px;
-    z-index: 0; /* Ensure it’s above the overlay */
-    background-color: rgba(255, 255, 255, 0.0); /* Adjusted background color with transparency */
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-/* Form Section */
-.form-section, .cart-summary {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjusted background color with transparency */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.form-section {
-    flex: 2;
-}
-
-.cart-summary {
-    flex: 1;
-}
-
-.cart-summary img {
-    height: 60px;
-    width: 60px;
-}
-
-h2 {
-    margin-top: 30px;
-    font-size: 1.75em;
-}
-
-.cart-summary p {
-    font-size: 1rem;
-    color: #333;
-    font-weight: 400;
-}
-
-.cart-summary strong {
-    font-size: 0.75rem;
-    color: #999;
-    font-weight: 100;
-}
-
-.cart-summary span {
-    font-size: 0.75rem;
-    color: #333;
-    font-weight: 100;
-}
-
-.cart-summary .content {
-    margin-left: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Adjust width of input, select, and textarea in form-section */
-.form-section input,
-.form-section select,
-.form-section textarea {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    border-radius: 0;
-    background-color: transparent;
-    transition: border-bottom-color 0.3s ease;
-}
-
-.form-section input:focus,
-.form-section select:focus,
-.form-section textarea:focus {
-    outline: none;
-    border-bottom-color: #000;
-}
-
-input[type="checkbox"], input[type="radio"] {
-    width: auto;
-    margin-right: 10px;
-}
-
-textarea {
-    height: 80px;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.cart-item img {
-    margin-right: 10px;
-}
-
-.order-summary {
-    margin-top: 20px;
-}
-
-.order-item, .order-total {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 10px 0;
-}
-
-.card-icons i {
-    margin-right: 10px;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: var(--btn-hover-dark);
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #001e00;
-}
-
-
 /*--------------------------------LOYALTY----------------------------------------------*/
 
 body.loyalty {
@@ -2344,5 +2141,49 @@ body.loyalty::after {
     height: 300px;
   }
 }
+
+/*-------------------order-page---------------------------------------------------------------------------------------------------------------*/
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 50%;
+    margin: 50px 20%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #218838;
+}
+.thank-you {
+    display: none;
+}
+
+
+
 
 
