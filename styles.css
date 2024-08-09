@@ -1820,7 +1820,7 @@ footer{
     height: 40px;
     background-color: #ecf7ee;
     color: var(--btn-hover);
-    border: 2 px solid var(--btn-hover);
+    border: 2px solid var(--btn-hover);
     border-radius: 20px;
     display: flex;
     justify-content: center;
